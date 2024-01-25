@@ -1,0 +1,31 @@
+{
+    "name": "palnpm",
+    "version": "0.1.0",
+    "description": "This package just takes a compiled json list and returns it. It will be expanded on in the future.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "npm",
+        "package"
+    ],
+    "author": "Kyle Mercier",
+    "license": "MIT",
+    "files": [
+        "data.json",
+        "index.js"
+    ],
+    "dependencies": {},
+    "devDependencies": {},
+    "engines": {
+        "node": ">=8.0.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ferociouskyle/PalNPM.git"
+    },
+    "bugs": {
+        "url": "https://github.com/ferociouskyle/PalNPM/issues"
+    }
+}
