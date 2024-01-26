@@ -1,5 +1,6 @@
 # PalNPM
 
+Palworld is taking the world by storm. So I wanted to make a package for people who are wanting to make something with the data. 
 PalNPM is a simple npm package that provides a JSON file allowing users to quickly search for a Pal and access almost all the details about the Pal, including their description.
 
 ## Installation
