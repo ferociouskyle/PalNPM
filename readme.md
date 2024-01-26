@@ -1,6 +1,3 @@
-Certainly! Here's the updated README file based on the changes you made to `index.js`:
-
-```markdown
 # PalNPM
 
 PalNPM is a Node.js module that provides data and utility functions related to PalWorld. PalNPM is a simple npm package that provides a JSON file allowing users to quickly search for a Pal and access almost all the details about the Pal, including their description.

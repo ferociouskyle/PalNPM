@@ -8,7 +8,11 @@
     },
     "keywords": [
         "npm",
-        "package"
+        "package",
+        "palnpm",
+        "pal",
+        "PalWorld",
+        "Palworld JS"
     ],
     "author": "Kyle Mercier",
     "license": "MIT",
