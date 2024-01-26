@@ -1,11 +1,11 @@
+Certainly! Here's the updated README file based on the changes you made to `index.js`:
+
+```markdown
 # PalNPM
 
-Palworld is taking the world by storm. So I wanted to make a package for people who are wanting to make something with the data. 
-PalNPM is a simple npm package that provides a JSON file allowing users to quickly search for a Pal and access almost all the details about the Pal, including their description.
+PalNPM is a Node.js module that provides data and utility functions related to PalWorld. PalNPM is a simple npm package that provides a JSON file allowing users to quickly search for a Pal and access almost all the details about the Pal, including their description.
 
 ## Installation
-
-You can install PalNPM using npm:
 
 ```bash
 npm install palnpm
@@ -16,18 +16,55 @@ npm install palnpm
 ```javascript
 const pal = require('palnpm');
 
-// Access Pal details
-console.log(pal.content);  // Get the array of Pal details
+// Get an array of Pal details
+console.log(pal.content);
 
-// Example: Displaying Pal names
-pal.content.forEach(pal => {
-  console.log(pal.name);
-});
+// Get a random Pal
+console.log(pal.random());
 
-// Example: Displaying details of a specific Pal (e.g., Anubis)
-const anubis = pal.content.find(p => p.name === 'Anubis');
-console.log(anubis);
+// Get the details of a Pal by its name
+try {
+  console.log(pal.getPalObject('Anubis'));
+} catch (error) {
+  console.error(error.message);
+}
+
+// Get the name of a Pal by its ID
+try {
+  console.log(pal.getName(1));
+} catch (error) {
+  console.error(error.message);
+}
+
+// Get the ID of a Pal by its name
+try {
+  console.log(pal.getId('Anubis'));
+} catch (error) {
+  console.error(error.message);
+}
 ```
+
+## API
+
+### `pal.content`
+
+An array containing details of various Pals.
+
+### `pal.random()`
+
+Returns a random Pal from the data.
+
+### `pal.getPalObject(name)`
+
+Returns the details of a Pal based on its name.
+
+### `pal.getName(id)`
+
+Returns the name of a Pal based on its ID.
+
+### `pal.getId(name)`
+
+Returns the ID of a Pal based on its name.
 
 ### Example Return
 
@@ -76,7 +113,3 @@ This project is licensed under the [MIT License](LICENSE).
 ## Acknowledgements
 
 Special thanks to the PalWorld community for providing valuable information about Pals.
-
----
-
-Feel free to further customize this template or let me know if there's anything specific you'd like to add or modify!
